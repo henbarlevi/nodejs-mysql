@@ -5,6 +5,10 @@ const router = express.Router();
 router.get('/', (req, res) => {
     res.send('welcome to server api');
 });
+router.get('/createdb', (req, res) => {
+    //create db:
+    // //connect to db
+});
 exports.default = router;
 //-------------------------------------SNIPPETS-------------------------
 //CONVERTING NODE FS callback to REACTIVE

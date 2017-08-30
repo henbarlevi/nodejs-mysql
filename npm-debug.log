@@ -1,111 +1,36 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'i',
-1 verbose cli   '@types/rxjs',
-1 verbose cli   '--save-dev' ]
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
 2 info using npm@3.10.10
-3 info using node@v6.11.0
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData @types/rxjs
-8 silly fetchNamedPackageData @types/rxjs
-9 silly mapToRegistry name @types/rxjs
-10 silly mapToRegistry scope (from package name) @types
-11 verbose mapToRegistry no registry URL found in name for scope @types
-12 silly mapToRegistry using default registry
-13 silly mapToRegistry registry https://registry.npmjs.org/
-14 silly mapToRegistry data Result {
-14 silly mapToRegistry   raw: '@types/rxjs',
-14 silly mapToRegistry   scope: '@types',
-14 silly mapToRegistry   escapedName: '@types%2frxjs',
-14 silly mapToRegistry   name: '@types/rxjs',
-14 silly mapToRegistry   rawSpec: '',
-14 silly mapToRegistry   spec: 'latest',
-14 silly mapToRegistry   type: 'tag' }
-15 silly mapToRegistry uri https://registry.npmjs.org/@types%2frxjs
-16 verbose request uri https://registry.npmjs.org/@types%2frxjs
-17 verbose request no auth needed
-18 info attempt registry request try #1 at 8:12:48 AM
-19 verbose request using bearer token for auth
-20 verbose request id fbf86fb22645c212
-21 http request GET https://registry.npmjs.org/@types%2frxjs
-22 http 404 https://registry.npmjs.org/@types%2frxjs
-23 verbose headers { 'content-type': 'application/json',
-23 verbose headers   'cache-control': 'max-age=0',
-23 verbose headers   'content-length': '2',
-23 verbose headers   'accept-ranges': 'bytes',
-23 verbose headers   date: 'Tue, 04 Jul 2017 05:12:45 GMT',
-23 verbose headers   via: '1.1 varnish',
-23 verbose headers   connection: 'keep-alive',
-23 verbose headers   'x-served-by': 'cache-hhn1544-HHN',
-23 verbose headers   'x-cache': 'MISS',
-23 verbose headers   'x-cache-hits': '0',
-23 verbose headers   'x-timer': 'S1499145165.832072,VS0,VE335',
-23 verbose headers   vary: 'Accept-Encoding' }
-24 silly get cb [ 404,
-24 silly get   { 'content-type': 'application/json',
-24 silly get     'cache-control': 'max-age=0',
-24 silly get     'content-length': '2',
-24 silly get     'accept-ranges': 'bytes',
-24 silly get     date: 'Tue, 04 Jul 2017 05:12:45 GMT',
-24 silly get     via: '1.1 varnish',
-24 silly get     connection: 'keep-alive',
-24 silly get     'x-served-by': 'cache-hhn1544-HHN',
-24 silly get     'x-cache': 'MISS',
-24 silly get     'x-cache-hits': '0',
-24 silly get     'x-timer': 'S1499145165.832072,VS0,VE335',
-24 silly get     vary: 'Accept-Encoding' } ]
-25 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/@types%2frxjs
-25 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-25 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
-25 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-25 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-25 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-25 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-25 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-25 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-25 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-25 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
-25 silly fetchPackageMetaData  error for @types/rxjs { Error: Registry returned 404 for GET on https://registry.npmjs.org/@types%2frxjs
-25 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-25 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
-25 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-25 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-25 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-25 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-25 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-25 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-25 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-25 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: '@types/rxjs', statusCode: 404, code: 'E404' }
-26 silly rollbackFailedOptional Starting
-27 silly rollbackFailedOptional Finishing
-28 silly runTopLevelLifecycles Finishing
-29 silly install printInstalled
-30 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/@types%2frxjs
-30 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-30 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
-30 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-30 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-30 verbose stack     at emitTwo (events.js:106:13)
-30 verbose stack     at Request.emit (events.js:191:7)
-30 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-30 verbose stack     at emitOne (events.js:96:13)
-30 verbose stack     at Request.emit (events.js:188:7)
-30 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
-31 verbose statusCode 404
-32 verbose pkgid @types/rxjs
-33 verbose cwd C:\Users\user\Desktop\quickstart-nodejs-express-typescript
-34 error Windows_NT 10.0.15063
-35 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "@types/rxjs" "--save-dev"
-36 error node v6.11.0
-37 error npm  v3.10.10
-38 error code E404
-39 error 404 Registry returned 404 for GET on https://registry.npmjs.org/@types%2frxjs
-40 error 404
-41 error 404 '@types/rxjs' is not in the npm registry.
-42 error 404 You should bug the author to publish it (or use the name yourself!)
-43 error 404 Note that you can also install from a
-44 error 404 tarball, folder, http url, or git url.
-45 verbose exit [ 1, true ]
+3 info using node@v6.11.2
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle quickstart@1.0.0~predev: quickstart@1.0.0
+6 silly lifecycle quickstart@1.0.0~predev: no script for predev, continuing
+7 info lifecycle quickstart@1.0.0~dev: quickstart@1.0.0
+8 verbose lifecycle quickstart@1.0.0~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle quickstart@1.0.0~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\hen\Desktop\nodejs-mysql\node_modules\.bin;C:\Users\hen\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\hen\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Users\hen\AppData\Local\Microsoft\WindowsApps;C:\Users\hen\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle quickstart@1.0.0~dev: CWD: C:\Users\hen\Desktop\nodejs-mysql
+11 silly lifecycle quickstart@1.0.0~dev: Args: [ '/d /s /c', 'npm-run-all --parallel compile start' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1020:11)
+12 verbose stack     at process.kill (internal/process.js:190:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+13 verbose cwd C:\Users\hen\Desktop\nodejs-mysql
+14 error Windows_NT 10.0.15063
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
+16 error node v6.11.2
+17 error npm  v3.10.10
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

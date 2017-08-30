@@ -11,7 +11,11 @@ router.get('/',(req: express.Request, res: express.Response) => {
 })
 
 
+router.get('/createdb',(req,res)=>{
+     //create db:
 
+    // //connect to db
+})
 
 export default router  ;
 
